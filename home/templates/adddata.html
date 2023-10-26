@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% block body %}
+<h3 class="quote">GET QUOTE</h3>
+
+
+    <form action="" enctype="multipart/form-data" method="post" class="row4">
+    {% csrf_token %}
+<div class="row3">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Full name">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+  <input type="number" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="number">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Short Description</label>
+  <input type="email" name="description" class="form-control" id="exampleFormControlInput1" placeholder="a static website">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Image</label>
+  <input type="file" name="image" accept="image/png, image/gif, image/jpeg" class="form-control" id="exampleFormControlInput1" placeholder="image">
+</div>
+</div>
+
+<div class="d-grid gap-2">
+  <button class="btn btn-primary" type="submit">SUBMIT</button>
+
+</div>
+</form>
+
+
+
+
+
+
+
+{% endblock %}
