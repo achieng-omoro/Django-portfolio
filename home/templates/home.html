@@ -1,0 +1,149 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block body %}
+<div class="mainb">
+<div class="container text-center">
+
+  <div class="row">
+
+    <div class="col-8"><h2> <span>Am MIKE,</span> <br><span>A WEB DEVELOPER</span></h2>
+        <p class="p">Responsible, creative, open-minded, friendly and ambitious. </p>
+        <br><br>
+        <img class="corder" src="{% static 'images/coder.png' %}" alt="corder">
+        <div class="lang" id="languages">
+        <h3>Languages</h3>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><h5>Java</h5></div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><h5>Python</h5></div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><h5>Laravel</h5></div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><h5>Flutter</h5></div>
+</div>
+
+        </div>
+
+
+    </div>
+
+    <div class="col-4">
+        <h3 class="abtme">About me</h3>
+        <p>Let me introduce myself in 7 words. Responsible, creative,
+            open-minded, friendly and ambitious web developer. This is how I see myself, and
+            hope you will give me a chance to prove my words in a job.</p>
+          <h3 class="abtme">My Work</h3>
+        <p>See some of my past works. <br><a class="browsep" href="#pastwork">BROWSE PORTFOLIO</a> </p>
+
+    </div>
+<div class="serv" id="services">
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/web.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Web development</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/andr.jpg' %}" class="card-img-top" id="seo" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Android development</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/seo.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">SEO (optimization)</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hos.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Web hosting</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+
+      <div class="works">
+  <h2 class="pastw" id="pastwork">past works</h2>
+      <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/apen.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="furn">Apen softwares: </h5>
+        <p class="furn">cloned home page for a kenyan software development firm</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/daecha.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="furn">furniture store</h5>
+        <p class="furn">landing page for an online furniture store</p>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+
+</div>
+      </div>
+<div class="container text-center" id="contact">
+    <h2 class="cont">contact us</h2>
+  <div class="row-las">
+    <div class="col" id="mapss">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164930.5227708147!2d34.08896702098819!3d-0.40213264807329074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d522f5b099a5b5%3A0x88d91af11ed4eabe!2sRusinga%20Island!5e0!3m2!1sen!2ske!4v1697364354837!5m2!1sen!2ske" width="350" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col" id="form1">
+      <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+</div>
+<div class="mb-3">
+
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <br>
+    <input class="subm" type="submit" value="SEND">
+</div>
+    </div>
+    <div class="col" id="call" >
+      <p>P.O. BOX 114 MBITA <br>+254729283378 <br>omoromichael@gmail.com <br><br> <br>MBITA RUSINGA <br>123 Avenue <br>Takawiri Front
+          <br>7th Floor Suite 45B</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+{% endblock %}
